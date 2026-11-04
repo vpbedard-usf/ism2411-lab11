@@ -13,3 +13,10 @@ print(customer["tier"])
 print(customer["ytd_spend"])
 print(customer)
 #exercise2
+customer["phone"]="555-1234"
+print(customer)
+customer["tier"]="platinum"
+print(customer)
+del customer["email"]
+print(customer)
+#exercise3
