@@ -20,3 +20,9 @@ print(customer)
 del customer["email"]
 print(customer)
 #exercise3
+print(customer.get('email', 'no email on file.'))
+try:
+    print(customer['email'])
+except KeyError:
+    print('no email on file.')
+#exercise4
