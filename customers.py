@@ -32,3 +32,12 @@ for key, value in customer.items():
 #the .items() method returns the raw data.
 #the for loop used is much leaner and can be formatted as we like.
 #exercise5
+tier_discounts = {
+    "bronze": 0,
+    "silver": 0.05,
+    "gold": 0.1,
+    "platinum": 0.15}
+purchase=200
+discount = tier_discounts.get(customer["tier"], 0)
+print(f"Discount for tier: {customer['tier']} : {discount*100:.0f}% - final price: ${purchase*(1-discount):.2f}")
+#exercise6
