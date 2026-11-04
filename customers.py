@@ -67,3 +67,12 @@ for item, details in catalog.items():
     if details["stock"] < 20:
         print("LOW STOCK ALERT: " + item)
 #exercise8
+transactions = [{"region": "South", "amount": 300}, {"region": "North", "amount": 150}, {"region": "South", "amount": 200}]
+sales_by_region = {}
+for transaction in transactions:
+    region=transaction['region']
+    sales_by_region[region] = sales_by_region.get(region, 0) + transaction['amount']
+print(sales_by_region)
+
+for region in sorted(sales_by_region.keys()):
+    print(f"{region}: ${sales_by_region[region]:.2f}")
