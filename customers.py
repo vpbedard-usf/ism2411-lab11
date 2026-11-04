@@ -61,3 +61,9 @@ for customer in customers:
     rate = tier_discounts.get(customer["tier"], 0)
     discount_amount = (300 * rate)
     print(f"{customer['name']} - {customer['tier']} - ${discount_amount:.2f} discount on a $300 purchase.")
+#exercise7
+catalog = {"Widget A": {"price": 9.99, "stock": 150}, "Gadget C": {"price": 49.99, "stock": 8}}
+for item, details in catalog.items():
+    if details["stock"] < 20:
+        print("LOW STOCK ALERT: " + item)
+#exercise8
