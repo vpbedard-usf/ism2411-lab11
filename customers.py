@@ -26,3 +26,9 @@ try:
 except KeyError:
     print('no email on file.')
 #exercise4
+print(customer.items())
+for key, value in customer.items():
+    print(f"{key}: {value}")
+#the .items() method returns the raw data.
+#the for loop used is much leaner and can be formatted as we like.
+#exercise5
