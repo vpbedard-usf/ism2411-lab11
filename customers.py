@@ -1,4 +1,4 @@
-# 1. 
+# 1. Bracket notation should be used when execution should stop because of an error. .get() should be used when it is okay for a key to be missing.
 # 2. 
 #exercise1
 customer={
@@ -73,6 +73,5 @@ for transaction in transactions:
     region=transaction['region']
     sales_by_region[region] = sales_by_region.get(region, 0) + transaction['amount']
 print(sales_by_region)
-
 for region in sorted(sales_by_region.keys()):
     print(f"{region}: ${sales_by_region[region]:.2f}")
